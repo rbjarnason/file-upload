@@ -102,8 +102,8 @@ Example:
               </div>
             </div>
             <div class="error" hidden$="{{!item.error}}">{{errorText}}</div>
-            <div hidden$={{progressHidden}}>
-              <paper-progress value$="{{item.progress}}" error$="{{item.error}}"></paper-progress>
+            <div hidden$={{item.complete}}>
+              <paper-progress value$="{{item.progress}}" indeterminate error$="{{item.error}}"></paper-progress>
             </div>
           </div>
         </template>
